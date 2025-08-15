@@ -1,25 +1,189 @@
 [
-  {"dish":"Steamed Dim Sum Assortment","codes":["GL","EG","SO"],"notes":"Wrapper gluten; fillings may contain egg/soy."},
-  {"dish":"Crispy Spring Rolls (veg)","codes":["GL","SO"],"notes":"Wrapper gluten; seasoning soy."},
-  {"dish":"Asparagus with Garlic Sauce","codes":["GA"],"notes":"Garlic-forward."},
-  {"dish":"Mapo Tofu (without beef)","codes":["SO","GA","ON"],"notes":"Soy-based sauce; aromatics."},
-  {"dish":"Peking Duck with Pancakes & Hoisin","codes":["GL","SO","SE"],"notes":"Pancakes gluten; hoisin soy; sesame possible."},
-  {"dish":"Char Siu Pork","codes":["SO","SU"],"notes":"Soy-based marinade; wine/sulfites possible."},
-  {"dish":"Slow Cooked Japanese Wagyu with Black Truffle Sauce","codes":["Mi","SO"],"notes":"Dairy possible; soy glaze optional."},
-  {"dish":"Stir-fry Angus Tenderloin Beef with Black Pepper Sauce","codes":["SO"],"notes":"Oyster/soy sauce base likely."},
-  {"dish":"Rack of Lamb with Chef's Special Sauce","codes":["SO"],"notes":"Check sauce base."},
-  {"dish":"Braised Pork Belly","codes":["SO","SU"],"notes":"Soy braise; wine/sulfites possible."},
-  {"dish":"Sizzling Taiwanese Three Cups Chicken","codes":["SO","SE","GA","ON"],"notes":"Soy sauce & sesame oil; aromatics."},
-  {"dish":"Salt and Pepper Estonian Quail","codes":["EG","SO"],"notes":"Egg white dredge possible; seasoning soy."},
-  {"dish":"Norwegian King Crab – Steamed with Rice Wine & Egg White","codes":["CR","EG","SU"],"notes":"Crustacean; egg white; wine/sulfites."},
-  {"dish":"Lobster with Ginger and Spring Onion","codes":["CR"],"notes":"Crustacean."},
-  {"dish":"Grilled Chilean Sea Bass in Honey","codes":["Fl","SO"],"notes":"Fish; soy glaze possible."},
-  {"dish":"Deep Fried King Scallop with Minced Prawns in Teriyaki Sauce","codes":["MO","CR","SO","SE"],"notes":"Scallop mollusc; prawns crustacean; teriyaki soy/sesame."},
-  {"dish":"Braised Fish Maw with Shiitake in Yellow Sauce & Truffle","codes":["Fl","MR","SO"],"notes":"Fish product; mushrooms; soy base."},
-  {"dish":"Sweet and Sour Iberico Pork","codes":["SO"],"notes":"Soy in sauce base."},
-  {"dish":"Kung Pao Prawn with Cashew","codes":["CR","NU","SE","SO","GA","ON"],"notes":"Crustacean; nuts; sesame; soy; aromatics."},
-  {"dish":"Steamed Jasmine Rice","codes":[],"notes":"Usually allergen-free; verify cross-contact."},
-  {"dish":"Seasonal Chinese Greens with Garlic","codes":["GA"],"notes":"Garlic; check for oyster/soy."},
-  {"dish":"Mango Sago (example)","codes":["Mi"],"notes":"Dairy in cream; check toppings."},
-  {"dish":"Black Sesame Ice Cream (example)","codes":["Mi","SE"],"notes":"Dairy and sesame."}
+  {
+    "dish": "Steamed Dim Sum Assortment",
+    "codes": [
+      "GL",
+      "EG",
+      "SO"
+    ],
+    "notes": "Wrapper gluten; fillings may contain egg/soy."
+  },
+  {
+    "dish": "Crispy Spring Rolls (veg)",
+    "codes": [
+      "GL",
+      "SO"
+    ],
+    "notes": "Wrapper gluten; seasoning soy."
+  },
+  {
+    "dish": "Asparagus with Garlic Sauce",
+    "codes": [
+      "GA"
+    ],
+    "notes": "Garlic-forward."
+  },
+  {
+    "dish": "Mapo Tofu (without beef)",
+    "codes": [
+      "SO",
+      "GA",
+      "ON"
+    ],
+    "notes": "Soy-based sauce; aromatics."
+  },
+  {
+    "dish": "Peking Duck with Pancakes & Hoisin",
+    "codes": [
+      "GL",
+      "SO",
+      "SE"
+    ],
+    "notes": "Pancakes gluten; hoisin soy; sesame possible."
+  },
+  {
+    "dish": "Char Siu Pork",
+    "codes": [
+      "SO",
+      "SU"
+    ],
+    "notes": "Soy-based marinade; wine/sulfites possible."
+  },
+  {
+    "dish": "Slow Cooked Japanese Wagyu with Black Truffle Sauce",
+    "codes": [
+      "Mi",
+      "SO"
+    ],
+    "notes": "Dairy possible; soy glaze optional."
+  },
+  {
+    "dish": "Stir-fry Angus Tenderloin Beef with Black Pepper Sauce",
+    "codes": [
+      "SO"
+    ],
+    "notes": "Oyster/soy sauce base likely."
+  },
+  {
+    "dish": "Rack of Lamb with Chef's Special Sauce",
+    "codes": [
+      "SO"
+    ],
+    "notes": "Check sauce base."
+  },
+  {
+    "dish": "Braised Pork Belly",
+    "codes": [
+      "SO",
+      "SU"
+    ],
+    "notes": "Soy braise; wine/sulfites possible."
+  },
+  {
+    "dish": "Sizzling Taiwanese Three Cups Chicken",
+    "codes": [
+      "SO",
+      "SE",
+      "GA",
+      "ON"
+    ],
+    "notes": "Soy sauce & sesame oil; aromatics."
+  },
+  {
+    "dish": "Salt and Pepper Estonian Quail",
+    "codes": [
+      "EG",
+      "SO"
+    ],
+    "notes": "Egg white dredge possible; seasoning soy."
+  },
+  {
+    "dish": "Norwegian King Crab \u2013 Steamed with Rice Wine & Egg White",
+    "codes": [
+      "CR",
+      "EG",
+      "SU"
+    ],
+    "notes": "Crustacean; egg white; wine/sulfites."
+  },
+  {
+    "dish": "Lobster with Ginger and Spring Onion",
+    "codes": [
+      "CR"
+    ],
+    "notes": "Crustacean."
+  },
+  {
+    "dish": "Grilled Chilean Sea Bass in Honey",
+    "codes": [
+      "Fl",
+      "SO"
+    ],
+    "notes": "Fish; soy glaze possible."
+  },
+  {
+    "dish": "Deep Fried King Scallop with Minced Prawns in Teriyaki Sauce",
+    "codes": [
+      "MO",
+      "CR",
+      "SO",
+      "SE"
+    ],
+    "notes": "Scallop mollusc; prawns crustacean; teriyaki soy/sesame."
+  },
+  {
+    "dish": "Braised Fish Maw with Shiitake in Yellow Sauce & Truffle",
+    "codes": [
+      "Fl",
+      "MR",
+      "SO"
+    ],
+    "notes": "Fish product; mushrooms; soy base."
+  },
+  {
+    "dish": "Sweet and Sour Iberico Pork",
+    "codes": [
+      "SO"
+    ],
+    "notes": "Soy in sauce base."
+  },
+  {
+    "dish": "Kung Pao Prawn with Cashew",
+    "codes": [
+      "CR",
+      "NU",
+      "SE",
+      "SO",
+      "GA",
+      "ON"
+    ],
+    "notes": "Crustacean; nuts; sesame; soy; aromatics."
+  },
+  {
+    "dish": "Steamed Jasmine Rice",
+    "codes": [],
+    "notes": "Usually allergen-free; verify cross-contact."
+  },
+  {
+    "dish": "Seasonal Chinese Greens with Garlic",
+    "codes": [
+      "GA"
+    ],
+    "notes": "Garlic; check for oyster/soy."
+  },
+  {
+    "dish": "Mango Sago (example)",
+    "codes": [
+      "Mi"
+    ],
+    "notes": "Dairy in cream; check toppings."
+  },
+  {
+    "dish": "Black Sesame Ice Cream (example)",
+    "codes": [
+      "Mi",
+      "SE"
+    ],
+    "notes": "Dairy and sesame."
+  }
 ]

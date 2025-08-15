@@ -1,0 +1,7 @@
+/*
+  Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+  X-Content-Type-Options: nosniff
+/allergens.json
+  Cache-Control: no-store
+/menu.json
+  Cache-Control: no-store

@@ -4,49 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shang Shi — Allergen & Dish Guide</title>
-  <meta name="description" content="Shang Shi front-of-house allergen and dish guide. Instantly filter dishes by allergen for guest safety.">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Shang Shi FOH allergen guide. Premium UI; instant filtering for safe dishes.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="hero">
+    <div class="hero-media">
+      <img src="assets/hero.svg" alt="" aria-hidden="true">
+    </div>
     <div class="hero-inner">
-      <div class="brand">
-        <img src="assets/logo.svg" alt="Shang Shi" class="logo" onerror="this.style.display='none';document.getElementById('fallbackTitle').style.display='block'">
-        <h1 id="fallbackTitle" class="fallback-title">Shang Shi</h1>
-      </div>
-      <h2 class="headline">Allergen & Dish Guide</h2>
-      <p class="subhead">Tick allergens to see safe dishes — or those to avoid.</p>
-      <div class="cta-row"><a href="#selector" class="btn primary">Open Selector</a></div>
+      <img src="assets/logo.svg" class="brandmark" alt="Shang Shi">
+      <h1 class="headline">Allergen & Dish Guide</h1>
+      <p class="subhead">Precision service. Tap to exclude allergens and present only guest‑safe dishes.</p>
+      <a href="#selector" class="btn btn-primary">Open selector</a>
     </div>
   </header>
+
   <main>
-    <section id="selector" class="section">
-      <div class="section-inner">
-        <h3 class="section-title">Interactive Selector</h3>
-        <div class="grid card">
-          <section class="panel">
-            <h4>Allergens</h4>
-            <div id="allergenList" class="allergen-list"></div>
-            <div class="toggle">
-              <label class="chip"><input type="radio" name="mode" value="safe" checked> SAFE (exclude selected)</label>
-              <label class="chip"><input type="radio" name="mode" value="contains"> CONTAINS (show selected)</label>
+    <section id="selector" class="selector-section">
+      <div class="shell">
+        <div class="selector-grid">
+          <aside class="panel panel-left">
+            <h3>Filter by allergen</h3>
+            <div id="allergenList" class="chips"></div>
+            <div class="modes">
+              <label class="mode"><input type="radio" name="mode" value="safe" checked><span>SAFE (exclude selected)</span></label>
+              <label class="mode"><input type="radio" name="mode" value="contains"><span>CONTAINS (show selected)</span></label>
             </div>
-          </section>
-          <section class="panel">
+            <p class="note">⚠️ Chef must verify codes before FOH use.</p>
+          </aside>
+
+          <section class="panel panel-right">
             <div class="toolbar">
               <input id="search" class="search" placeholder="Search dishes…">
-              <button id="clearBtn" class="btn small">Clear</button>
+              <button id="clearBtn" class="btn btn-ghost">Clear</button>
             </div>
             <div id="activeFilters" class="active-filters"></div>
-            <div id="results" class="results"></div>
+            <div id="results" class="cards"></div>
             <div id="empty" class="empty">No dishes match your filters.</div>
           </section>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="footer-inner">© Shang Shi · FOH Allergen & Dish Guide</div></footer>
+
+  <footer class="footer">
+    <div class="shell">
+      <div>© Shang Shi</div>
+      <div class="dot"></div>
+      <div>FOH Allergen & Dish Guide</div>
+    </div>
+  </footer>
+
   <script src="app.js"></script>
 </body>
 </html>

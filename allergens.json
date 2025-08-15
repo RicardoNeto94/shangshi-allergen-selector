@@ -1,7 +1,74 @@
 [
-  {"code":"CE","name":"Celery"}, {"code":"GL","name":"Cereals containing gluten"}, {"code":"CR","name":"Crustaceans"},
-  {"code":"EG","name":"Eggs"}, {"code":"Fl","name":"Fish"}, {"code":"LU","name":"Lupin"}, {"code":"MO","name":"Molluscs"},
-  {"code":"Mi","name":"Milk"}, {"code":"MU","name":"Mustard"}, {"code":"NU","name":"Nuts"}, {"code":"PE","name":"Peanuts"},
-  {"code":"SE","name":"Sesame seeds"}, {"code":"SO","name":"Soya"}, {"code":"SU","name":"Sulfites"},
-  {"code":"GA","name":"Garlic"}, {"code":"ON","name":"Onion"}, {"code":"MR","name":"Mushrooms"}, {"code":"Cl","name":"Awaiting completion/other"}
+  {
+    "code": "CE",
+    "name": "Celery"
+  },
+  {
+    "code": "GL",
+    "name": "Cereals containing gluten"
+  },
+  {
+    "code": "CR",
+    "name": "Crustaceans"
+  },
+  {
+    "code": "EG",
+    "name": "Eggs"
+  },
+  {
+    "code": "Fl",
+    "name": "Fish"
+  },
+  {
+    "code": "LU",
+    "name": "Lupin"
+  },
+  {
+    "code": "MO",
+    "name": "Molluscs"
+  },
+  {
+    "code": "Mi",
+    "name": "Milk"
+  },
+  {
+    "code": "MU",
+    "name": "Mustard"
+  },
+  {
+    "code": "NU",
+    "name": "Nuts"
+  },
+  {
+    "code": "PE",
+    "name": "Peanuts"
+  },
+  {
+    "code": "SE",
+    "name": "Sesame seeds"
+  },
+  {
+    "code": "SO",
+    "name": "Soya"
+  },
+  {
+    "code": "SU",
+    "name": "Sulfites"
+  },
+  {
+    "code": "GA",
+    "name": "Garlic"
+  },
+  {
+    "code": "ON",
+    "name": "Onion"
+  },
+  {
+    "code": "MR",
+    "name": "Mushrooms"
+  },
+  {
+    "code": "Cl",
+    "name": "Awaiting completion/other"
+  }
 ]
