@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shang Shi — Allergen & Dish Guide</title>
-  <meta name="description" content="Shang Shi FOH allergen guide. Filter dishes by allergens in seconds.">
+  <meta name="description" content="Filter dishes by allergens in seconds — built for FOH.">
   <link rel="icon" href="assets/logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="nav">
     <div class="nav-inner shell">
-      <div class="nav-brand">
-        <img src="assets/logo.png" alt="Shang Shi" class="nav-logo">
+      <a href="#" class="nav-brand">
+        <img src="assets/logo.png" alt="Shang Shi" class="nav-logo" />
         <span class="brand-text">Shang Shi</span>
-      </div>
+      </a>
       <nav class="nav-links">
         <a href="#selector">Selector</a>
         <a href="#how">How it works</a>
@@ -27,7 +27,7 @@
     <div class="shell hero-grid">
       <div class="hero-copy">
         <h1>Effortless allergen checks for flawless service</h1>
-        <p>Tap allergens, see safe dishes instantly. Built for FOH speed and guest confidence.</p>
+        <p>Tick allergens, see safe dishes instantly. Designed for iPad and quick guest interactions.</p>
         <div class="hero-ctas">
           <a class="btn primary" href="#selector">Open selector</a>
           <a class="btn ghost" href="#how">Learn more</a>
@@ -71,9 +71,9 @@
       <div class="shell">
         <h2>How it works</h2>
         <div class="features">
-          <div class="feat"><div class="feat-icon">✓</div><h4>Instant filtering</h4><p>Tick one or more allergens — we hide any dish that contains them.</p></div>
-          <div class="feat"><div class="feat-icon">📱</div><h4>FOH-first</h4><p>Finger-friendly chips and big type. Works great on iPad.</p></div>
-          <div class="feat"><div class="feat-icon">⚡</div><h4>Live updates</h4><p>Edit <code>menu.json</code> online, refresh and you’re done.</p></div>
+          <div class="feat"><div class="feat-icon">✓</div><h4>Instant filtering</h4><p>We hide dishes that contain any selected allergens.</p></div>
+          <div class="feat"><div class="feat-icon">📱</div><h4>iPad-ready</h4><p>Large touch targets, fluid layout, sticky filters.</p></div>
+          <div class="feat"><div class="feat-icon">⚡</div><h4>Live edits</h4><p>Update <code>menu.json</code> online and refresh.</p></div>
         </div>
       </div>
     </section>
@@ -81,17 +81,15 @@
     <section id="faq" class="section">
       <div class="shell">
         <h2>FAQ</h2>
-        <details><summary>How do we update dishes?</summary><p>Edit <code>menu.json</code> in GitHub/Netlify. Each dish has a name, <code>codes</code> array, and optional <code>notes</code>.</p></details>
-        <details><summary>Can we see dishes that contain an allergen?</summary><p>Yes — switch the mode to <strong>CONTAINS</strong> to show only dishes that include the selected allergens.</p></details>
-        <details><summary>Can we add more allergens?</summary><p>Yes — add entries to <code>allergens.json</code> with a <code>code</code> and <code>name</code>.</p></details>
+        <details><summary>Update dishes?</summary><p>Edit <code>menu.json</code>; each dish has a <code>codes</code> array like <code>["GL","SO"]</code>.</p></details>
+        <details><summary>Show dishes that contain an allergen?</summary><p>Switch mode to <strong>CONTAINS</strong>.</p></details>
+        <details><summary>Add new allergens?</summary><p>Add to <code>allergens.json</code> with a code + name.</p></details>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="shell">
-      <span>© Shang Shi</span><span class="dot"></span><span>FOH Allergen & Dish Guide</span>
-    </div>
+    <div class="shell"><span>© Shang Shi</span><span class="dot"></span><span>FOH Allergen & Dish Guide</span></div>
   </footer>
 
   <script src="app.js"></script>
