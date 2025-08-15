@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shang Shi — Allergen & Dish Guide</title>
+  <meta name="description" content="Shang Shi front-of-house allergen and dish guide. Instantly filter dishes by allergen for guest safety.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Shang Shi" class="logo" onerror="this.style.display='none';document.getElementById('fallbackTitle').style.display='block'">
+        <h1 id="fallbackTitle" class="fallback-title">Shang Shi</h1>
+      </div>
+      <h2 class="headline">Allergen & Dish Guide</h2>
+      <p class="subhead">Tick allergens to see safe dishes — or those to avoid.</p>
+      <div class="cta-row"><a href="#selector" class="btn primary">Open Selector</a></div>
+    </div>
+  </header>
+  <main>
+    <section id="selector" class="section">
+      <div class="section-inner">
+        <h3 class="section-title">Interactive Selector</h3>
+        <div class="grid card">
+          <section class="panel">
+            <h4>Allergens</h4>
+            <div id="allergenList" class="allergen-list"></div>
+            <div class="toggle">
+              <label class="chip"><input type="radio" name="mode" value="safe" checked> SAFE (exclude selected)</label>
+              <label class="chip"><input type="radio" name="mode" value="contains"> CONTAINS (show selected)</label>
+            </div>
+          </section>
+          <section class="panel">
+            <div class="toolbar">
+              <input id="search" class="search" placeholder="Search dishes…">
+              <button id="clearBtn" class="btn small">Clear</button>
+            </div>
+            <div id="activeFilters" class="active-filters"></div>
+            <div id="results" class="results"></div>
+            <div id="empty" class="empty">No dishes match your filters.</div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-inner">© Shang Shi · FOH Allergen & Dish Guide</div></footer>
+  <script src="app.js"></script>
+</body>
+</html>

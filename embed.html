@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shang Shi — Selector (Embed)</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero, .footer, .section-title { display:none !important; }
+    body { padding: 12px; }
+    .grid { grid-template-columns: 320px 1fr; }
+    @media (max-width: 900px){ .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="grid card">
+    <section class="panel">
+      <h4>Allergens</h4>
+      <div id="allergenList" class="allergen-list"></div>
+      <div class="toggle">
+        <label class="chip"><input type="radio" name="mode" value="safe" checked> SAFE (exclude selected)</label>
+        <label class="chip"><input type="radio" name="mode" value="contains"> CONTAINS (show selected)</label>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="toolbar">
+        <input id="search" class="search" placeholder="Search dishes…">
+        <button id="clearBtn" class="btn small">Clear</button>
+      </div>
+      <div id="activeFilters" class="active-filters"></div>
+      <div id="results" class="results"></div>
+      <div id="empty" class="empty">No dishes match your filters.</div>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
