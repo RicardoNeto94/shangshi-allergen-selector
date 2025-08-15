@@ -54,14 +54,17 @@
 .note{color:var(--muted);}
 
 /* Chips */
-.chips{display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:10px; margin-bottom:8px;}
-@media (min-width: 560px){ .chips{ grid-template-columns: repeat(3, minmax(0,1fr)); } }
-.chip{display:flex; align-items:center; gap:8px; padding:10px 12px; border-radius:999px; border:1px solid #26262e; background:#0b0b0e; cursor:pointer; transition:.2s transform,.2s border-color,.2s background;}
-.chip input{appearance:none; width:16px; height:16px; border-radius:4px; border:1px solid #3a3a42; display:inline-block;}
-.chip input:checked{background:linear-gradient(180deg, var(--brand-light), var(--brand)); border-color:var(--brand-dark);}
-.chip:hover{transform:translateY(-1px);}
-.mode{display:flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; border:1px dashed #2a2a32; margin-right:6px; cursor:pointer;}
-.modes{display:flex; flex-wrap:wrap; gap:8px;}
+.chips{display:grid; gap:10px; grid-template-columns:1fr; align-content:start;}
+@media (min-width:520px){ .chips{ grid-template-columns:repeat(2, 1fr); } }
+@media (min-width:820px){ .chips{ grid-template-columns:repeat(3, 1fr); } }
+
+/* Chip layout fix */
+.chip{display:flex; align-items:center; gap:10px; padding:10px 12px;
+      border-radius:999px; border:1px solid #26262e; background:#0b0b0e;}
+.chip input{flex:0 0 auto; width:18px; height:18px; accent-color: var(--brand);}
+.chip strong{flex:0 0 2.6ch; text-align:center; letter-spacing:.4px;}
+.chip .name{flex:1 1 auto; min-width:0; white-space:normal; line-height:1.25;}
+.chip strong + .name::before{content:" · "; opacity:.6;}
 
 /* Results */
 .toolbar{display:flex; gap:10px; align-items:center; margin-bottom:10px;}
