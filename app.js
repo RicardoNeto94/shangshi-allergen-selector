@@ -26,11 +26,11 @@ function renderList(){
 function renderChips(){
   const box = document.getElementById('allergenList');
   box.innerHTML = state.allergens.map(a => `
-    <label class="chip">
-      <input type="checkbox" value="${a.code}">
-      <strong>${a.code}</strong><span class="name">· ${a.name}</span>
-    </label>
-  `).join('');
+  <label class="chip">
+    <input type="checkbox" value="${a.code}">
+    <strong>${a.code}</strong><span class="name">${a.name}</span>
+  </label>
+`).join('');
   box.querySelectorAll('input[type=checkbox]').forEach(chk => {
     chk.addEventListener('change', e => {
       const c = e.target.value;
