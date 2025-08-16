@@ -1,13 +1,12 @@
-const state = { allergens: [], menu: [], selected: new Set(), mode: 'safe', q: '', ingQ: '' };
 
+const state = { allergens: [], menu: [], selected: new Set(), mode: 'safe', q: '', ingQ: '' };
 const badge = c => `<span class="badge">${c}</span>`;
 const pill  = c => `<span class="badge">${c}</span>`;
 const tag   = t => `<span class="tag">${t}</span>`;
 
 function renderFilterPills(){
   const el = document.getElementById('activeFilters');
-  if (!el) return;
-  el.innerHTML = state.selected.size ? ('Selected: ' + Array.from(state.selected).map(pill).join(' ')) : '';
+  if (el) el.innerHTML = state.selected.size ? ('Selected: ' + Array.from(state.selected).map(pill).join(' ')) : '';
   const msCount = document.getElementById('msCount');
   if (msCount){
     if (state.selected.size){ msCount.textContent = state.selected.size; msCount.hidden = false; }
@@ -49,7 +48,7 @@ function renderList(){
   if (!wrap) return;
   let list=state.menu.filter(matchesQ).filter(matchesIngredient);
   list=(state.mode==='safe')?list.filter(isSafe):list.filter(containsSel);
-  wrap.innerHTML=list.map(d=>`<article class="card card-dish">
+  wrap.innerHTML=list.map(d=>`<article class="card">
       <h4>${d.dish}</h4>
       <div class="badges">${d.codes.map(badge).join(' ')||'<span class="badge">No codes</span>'}</div>
       ${shortTags(d.ingredients,4)}
@@ -92,21 +91,21 @@ function wireMultiSelect(){
   const clear = document.getElementById('msClear');
   function close(){ if(menu){ menu.classList.remove('open'); toggle?.setAttribute('aria-expanded','false'); menu?.setAttribute('aria-hidden','true'); } }
   function open(){ if(menu){ menu.classList.add('open'); toggle?.setAttribute('aria-expanded','true'); menu?.setAttribute('aria-hidden','false'); } }
-  if (toggle){
-    toggle.addEventListener('click', () => menu?.classList.contains('open') ? close() : open());
-  }
-  done?.addEventListener('click', close);
-  clear?.addEventListener('click', () => { state.selected.clear(); renderDropdown(); renderFilterPills(); renderList(); });
-  document.addEventListener('click', (e) => { if (!menu || !toggle) return; if (!menu.contains(e.target) && !toggle.contains(e.target)) close(); });
+  if (toggle) toggle.addEventListener('click', () => menu?.classList.contains('open') ? close() : open());
+  if (done) done.addEventListener('click', close);
+  if (clear) clear.addEventListener('click', () => { state.selected.clear(); renderDropdown(); renderFilterPills(); renderList(); });
+  document.addEventListener('click', (e) => { if (menu && !menu.contains(e.target) && !toggle?.contains(e.target)) close(); });
 }
 
 function wireCommon(){
   const s = document.getElementById('search');
-  if (s){ s.addEventListener('input', e => { state.q = e.target.value; renderList(); }); }
+  if (s) s.addEventListener('input', e => { state.q = e.target.value; renderList(); });
   const clearBtn = document.getElementById('clearBtn');
-  clearBtn?.addEventListener('click', () => {
+  if (clearBtn) clearBtn.addEventListener('click', () => {
     state.selected.clear();
-    renderDropdown(); if(s) s.value=''; state.q=''; const ii=document.getElementById('ingInline'); if(ii) ii.value=''; state.ingQ=''; renderFilterPills(); renderList();
+    renderDropdown(); if(s) s.value=''; state.q='';
+    const ingInline = document.getElementById('ingInline'); if(ingInline) ingInline.value=''; state.ingQ='';
+    renderFilterPills(); renderList();
   });
   const ingInline = document.getElementById('ingInline');
   if (ingInline) ingInline.addEventListener('input', e => { state.ingQ = e.target.value; renderList(); });
@@ -115,8 +114,8 @@ function wireCommon(){
 
 function wireStickyCompact(){
   const panel = document.getElementById('stickyPanel');
-  if (!panel) return;
   const menu = document.getElementById('msMenu');
+  if (!panel) return;
   let lastY = window.scrollY;
   const downThreshold = 120;
   const upThreshold   = 80;
@@ -128,20 +127,23 @@ function wireStickyCompact(){
     else if ((y < lastY && y < downThreshold) || y < upThreshold) { compactOff(); }
     lastY = y;
   }, {passive:true});
-}
 
-/* Mobile: selector as top bar that shrinks */
-function wireMobileTopBar(){
-  const panel = document.getElementById('stickyPanel');
-  if (!panel) return;
-  let last = window.pageYOffset;
-  window.addEventListener('scroll', () => {
-    const cur = window.pageYOffset;
-    if (cur > last){ panel.classList.add('compact'); } else { panel.classList.remove('compact'); }
-    last = cur;
+  // Mobile: collapse to top bar on scroll down, expand on scroll up
+  let lastScroll = 0;
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > lastScroll) {
+      panel.classList.add("compact");
+    } else {
+      panel.classList.remove("compact");
+    }
+    lastScroll = currentScroll;
   }, {passive:true});
-  document.getElementById('msToggle')?.addEventListener('click', () => {
-    panel.classList.toggle('expanded');
+
+  // Toggle expanded drawer on button tap (mobile)
+  const toggle = document.getElementById("msToggle");
+  if (toggle) toggle.addEventListener("click", () => {
+    panel.classList.toggle("expanded");
   });
 }
 
@@ -149,8 +151,7 @@ function renderIngredients(){
   const box = document.getElementById('ingList');
   if (!box) return;
   const empty = document.getElementById('ingEmpty');
-  const qEl = document.getElementById('ingSearch');
-  const q = (qEl?.value || '').toLowerCase();
+  const q = (document.getElementById('ingSearch')?.value || '').toLowerCase();
   const list = state.menu.filter(d => {
     const ing = (d.ingredients || []).join(' ').toLowerCase();
     return (!q) || d.dish.toLowerCase().includes(q) || ing.includes(q);
@@ -158,7 +159,7 @@ function renderIngredients(){
   box.innerHTML = list.map(d => {
     const ings = d.ingredients && d.ingredients.length ? d.ingredients.map(i=>`<span class="tag">${i}</span>`).join('') : '';
     return `
-      <article class="card card-dish">
+      <article class="card">
         <h4>${d.dish}</h4>
         <div class="badges">${d.codes.map(c=>`<span class="badge">${c}</span>`).join(' ')}</div>
         ${ings?`<div class="tags">${ings}</div>`:`<div class="note">Ingredients: add later in <code>menu.json</code>.</div>`}
@@ -166,13 +167,14 @@ function renderIngredients(){
       </article>`;
   }).join('');
   if (empty) empty.style.display = list.length ? 'none' : 'block';
-  qEl?.addEventListener('input', renderIngredients);
 }
 
 async function load(){
   const [aRes,mRes]=await Promise.all([fetch('allergens.json'), fetch('menu.json')]);
   state.allergens=await aRes.json(); state.menu=await mRes.json();
   renderDropdown(); renderFilterPills(); renderList(); renderIngredients();
+  const ingSearch = document.getElementById('ingSearch');
+  if (ingSearch) ingSearch.addEventListener('input', renderIngredients);
 }
 
-wireMultiSelect(); wireCommon(); wireStickyCompact(); wireMobileTopBar(); load();
+wireMultiSelect(); wireCommon(); wireStickyCompact(); load();
