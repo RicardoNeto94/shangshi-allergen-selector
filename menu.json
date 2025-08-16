@@ -1,125 +1,164 @@
 [
   {
-    "dish": "Steamed Dim Sum Assortment",
+    "dish": "Steamed Vegetarian Dim Sum Platter",
     "codes": [
       "GL",
-      "EG",
-      "SO"
-    ],
-    "notes": "Wrapper gluten; fillings may contain egg/soy."
-  },
-  {
-    "dish": "Crispy Spring Rolls (veg)",
-    "codes": [
-      "GL",
-      "SO"
-    ],
-    "notes": "Wrapper gluten; seasoning soy."
-  },
-  {
-    "dish": "Asparagus with Garlic Sauce",
-    "codes": [
-      "GA"
-    ],
-    "notes": "Garlic-forward."
-  },
-  {
-    "dish": "Mapo Tofu (without beef)",
-    "codes": [
-      "SO",
-      "GA",
-      "ON"
-    ],
-    "notes": "Soy-based sauce; aromatics."
-  },
-  {
-    "dish": "Peking Duck with Pancakes & Hoisin",
-    "codes": [
-      "GL",
-      "SO",
+      "MR",
+      "Mi",
+      "CE",
       "SE"
     ],
-    "notes": "Pancakes gluten; hoisin soy; sesame possible."
+    "notes": "Green: truffle/edamame (milk); Orange: spicy veg (celery); sesame traces."
   },
   {
-    "dish": "Char Siu Pork",
+    "dish": "Steamed Dim Sum Platter",
     "codes": [
+      "GL"
+    ],
+    "notes": "General gluten from wrappers."
+  },
+  {
+    "dish": "Deep Fried Dim Sum Assortment",
+    "codes": [
+      "GL",
+      "EG",
+      "NU"
+    ],
+    "notes": "Venison puff contains egg; pumpkin ball may contain nuts."
+  },
+  {
+    "dish": "Golden Fried Soft Shell Crab with Chilli",
+    "codes": [
+      "GL",
+      "CR",
+      "EG"
+    ],
+    "notes": "Deep-fried crustacean."
+  },
+  {
+    "dish": "Home-made Salt and Pepper Crispy Tofu (v)",
+    "codes": [
+      "GL",
+      "GA"
+    ],
+    "notes": "Ask for nut-free if needed (no sauce)."
+  },
+  {
+    "dish": "Black Truffle Vegetable Spring Roll (v)",
+    "codes": [
+      "GL",
+      "MR"
+    ],
+    "notes": "Mushroom/truffle filling."
+  },
+  {
+    "dish": "Crispy Aromatic Duck Salad",
+    "codes": [
+      "GL",
+      "NU",
       "SO",
-      "SU"
+      "ON",
+      "GA"
     ],
-    "notes": "Soy-based marinade; wine/sulfites possible."
+    "notes": "Nuts in garnish; soy/garlic in sauce."
   },
   {
-    "dish": "Slow Cooked Japanese Wagyu with Black Truffle Sauce",
+    "dish": "Duck Soup",
     "codes": [
-      "Mi",
-      "SO"
-    ],
-    "notes": "Dairy possible; soy glaze optional."
-  },
-  {
-    "dish": "Stir-fry Angus Tenderloin Beef with Black Pepper Sauce",
-    "codes": [
-      "SO"
-    ],
-    "notes": "Oyster/soy sauce base likely."
-  },
-  {
-    "dish": "Rack of Lamb with Chef's Special Sauce",
-    "codes": [
-      "SO"
-    ],
-    "notes": "Check sauce base."
-  },
-  {
-    "dish": "Braised Pork Belly",
-    "codes": [
+      "GL",
       "SO",
-      "SU"
-    ],
-    "notes": "Soy braise; wine/sulfites possible."
-  },
-  {
-    "dish": "Sizzling Taiwanese Three Cups Chicken",
-    "codes": [
-      "SO",
+      "MR",
       "SE",
-      "GA",
       "ON"
     ],
-    "notes": "Soy sauce & sesame oil; aromatics."
+    "notes": "Sesame & soy; onions; mushrooms."
   },
   {
-    "dish": "Salt and Pepper Estonian Quail",
+    "dish": "Hot and Sour Soup with Seafood",
+    "codes": [
+      "GL",
+      "MU",
+      "CR",
+      "EG",
+      "SO",
+      "ON",
+      "MR"
+    ],
+    "notes": "Egg white; mustard; seafood."
+  },
+  {
+    "dish": "Sweet Corn Soup with Chicken",
+    "codes": [
+      "EG"
+    ],
+    "notes": "Egg white."
+  },
+  {
+    "dish": "Stir Fried Squid with Pepper, Chilli, and Garlic",
     "codes": [
       "EG",
-      "SO"
+      "ON",
+      "GA"
     ],
-    "notes": "Egg white dredge possible; seasoning soy."
+    "notes": "Egg white; aromatics."
   },
   {
-    "dish": "Norwegian King Crab \u2013 Steamed with Rice Wine & Egg White",
+    "dish": "Norwegian King Crab \u2014 Pan-fried with Chilli & Garlic",
+    "codes": [
+      "CR",
+      "GA"
+    ],
+    "notes": "Crustacean; garlic."
+  },
+  {
+    "dish": "Norwegian King Crab \u2014 Steamed with Rice Wine & Egg White",
     "codes": [
       "CR",
       "EG",
-      "SU"
+      "GL",
+      "ON"
     ],
-    "notes": "Crustacean; egg white; wine/sulfites."
+    "notes": "Egg white; scallion; check soy (GF option noted)."
   },
   {
     "dish": "Lobster with Ginger and Spring Onion",
     "codes": [
+      "CR",
+      "ON",
+      "GA",
+      "SE"
+    ],
+    "notes": "Sesame oil used; can ask without."
+  },
+  {
+    "dish": "Braised South African Kippin Abalone in Superior Oyster Sauce",
+    "codes": [
+      "GL",
+      "SO",
+      "MR",
       "CR"
     ],
-    "notes": "Crustacean."
+    "notes": "Oyster/soy; mushrooms."
+  },
+  {
+    "dish": "Braised Fish Maw with Japanese Shiitake in Superior Oyster Sauce",
+    "codes": [
+      "GL",
+      "SO",
+      "MR",
+      "Fl"
+    ],
+    "notes": "Fish product; mushrooms; soy/oyster."
   },
   {
     "dish": "Grilled Chilean Sea Bass in Honey",
     "codes": [
       "Fl",
-      "SO"
+      "SO",
+      "SE",
+      "MR"
     ],
-    "notes": "Fish; soy glaze possible."
+    "notes": "Sesame oil; optional tempura mushroom garnish."
   },
   {
     "dish": "Deep Fried King Scallop with Minced Prawns in Teriyaki Sauce",
@@ -127,25 +166,11 @@
       "MO",
       "CR",
       "SO",
-      "SE"
+      "SE",
+      "EG",
+      "ON"
     ],
-    "notes": "Scallop mollusc; prawns crustacean; teriyaki soy/sesame."
-  },
-  {
-    "dish": "Braised Fish Maw with Shiitake in Yellow Sauce & Truffle",
-    "codes": [
-      "Fl",
-      "MR",
-      "SO"
-    ],
-    "notes": "Fish product; mushrooms; soy base."
-  },
-  {
-    "dish": "Sweet and Sour Iberico Pork",
-    "codes": [
-      "SO"
-    ],
-    "notes": "Soy in sauce base."
+    "notes": "Mollusc + crustacean; egg in batter possible."
   },
   {
     "dish": "Kung Pao Prawn with Cashew",
@@ -157,33 +182,225 @@
       "GA",
       "ON"
     ],
-    "notes": "Crustacean; nuts; sesame; soy; aromatics."
+    "notes": "Cashew nuts; sesame oil; soy; aromatics."
+  },
+  {
+    "dish": "Legendary Peking Duck (all courses)",
+    "codes": [
+      "GL",
+      "NU",
+      "SO",
+      "ON",
+      "GA",
+      "MR"
+    ],
+    "notes": "3rd course may include pine nuts; sauces have garlic; mushrooms optional in some courses."
+  },
+  {
+    "dish": "Slow Cooked Japanese Wagyu with Black Truffle Sauce",
+    "codes": [
+      "GL",
+      "SO",
+      "SE",
+      "MR",
+      "ON",
+      "Mi"
+    ],
+    "notes": "Truffle sauce; sesame oil possible; dairy in sauce."
+  },
+  {
+    "dish": "Stir-fry Angus Tenderloin Beef with Black Pepper Sauce",
+    "codes": [
+      "GL",
+      "SO",
+      "Mi",
+      "ON",
+      "GA"
+    ],
+    "notes": "Butter in sauce; onion & garlic."
+  },
+  {
+    "dish": "Rack of Lamb with Chef's Special Sauce",
+    "codes": [
+      "Mi",
+      "GL",
+      "ON"
+    ],
+    "notes": "Mongolian-style sauce; contains dairy."
+  },
+  {
+    "dish": "Sweet and Sour Iberico Pork with Pineapple",
+    "codes": [
+      "GL",
+      "SO",
+      "SE",
+      "ON",
+      "GA"
+    ],
+    "notes": "Sesame oil & soy in sauce."
+  },
+  {
+    "dish": "Sizzling Taiwanese Three Cups Chicken",
+    "codes": [
+      "GL",
+      "SO",
+      "SE",
+      "GA",
+      "ON"
+    ],
+    "notes": "Soy & sesame oil; aromatics."
+  },
+  {
+    "dish": "Braised Pork Belly",
+    "codes": [
+      "GL",
+      "SO",
+      "SE",
+      "ON",
+      "GA"
+    ],
+    "notes": "Soy braise; sesame oil common."
+  },
+  {
+    "dish": "Salt and Pepper Estonian Quail",
+    "codes": [
+      "EG",
+      "GA",
+      "ON"
+    ],
+    "notes": "Egg white dredge; aromatics."
+  },
+  {
+    "dish": "Honey-glazed Iberico Char Siu",
+    "codes": [
+      "SO",
+      "SU"
+    ],
+    "notes": "Soy-based glaze; sulfites possible."
+  },
+  {
+    "dish": "Crispy Pork Belly",
+    "codes": [
+      "MU"
+    ],
+    "notes": "Mustard on side as per notes; otherwise nut-free & egg-free."
+  },
+  {
+    "dish": "Stir Fry Lamian with Angus Beef",
+    "codes": [
+      "GL",
+      "EG",
+      "SE",
+      "SO",
+      "ON",
+      "GA"
+    ],
+    "notes": "Hand-pulled noodles (gluten); egg; soy & sesame."
+  },
+  {
+    "dish": "Spicy Singapore Noodles with Seafood",
+    "codes": [
+      "GL",
+      "EG",
+      "CR",
+      "SE",
+      "SO",
+      "ON"
+    ],
+    "notes": "Seafood + egg; soy & sesame."
+  },
+  {
+    "dish": "Special Pork Fried Rice with XO Sauce",
+    "codes": [
+      "EG",
+      "CR",
+      "SE",
+      "SO",
+      "ON",
+      "GA"
+    ],
+    "notes": "XO contains dried seafood; sesame oil; soy."
+  },
+  {
+    "dish": "Golden Egg Fried Rice",
+    "codes": [
+      "EG"
+    ],
+    "notes": "Simple egg rice."
   },
   {
     "dish": "Steamed Jasmine Rice",
     "codes": [],
-    "notes": "Usually allergen-free; verify cross-contact."
+    "notes": "Typically allergen\u2011free; verify cross-contact."
   },
   {
-    "dish": "Seasonal Chinese Greens with Garlic",
+    "dish": "Claypot Silken Egg Tofu with Vegetables (V)",
+    "codes": [
+      "SO",
+      "MR",
+      "EG",
+      "ON"
+    ],
+    "notes": "Silken tofu + egg; mushrooms; soy."
+  },
+  {
+    "dish": "Mapo Tofu (with Minced Beef)",
+    "codes": [
+      "SO",
+      "MU",
+      "ON",
+      "GA",
+      "MR"
+    ],
+    "notes": "Chili bean + mustard; aromatics."
+  },
+  {
+    "dish": "Baby Pak Choi with Garlic",
     "codes": [
       "GA"
     ],
-    "notes": "Garlic; check for oyster/soy."
+    "notes": "Garlic\u2011only version."
   },
   {
-    "dish": "Mango Sago (example)",
+    "dish": "Baby Pak Choi with Oyster Sauce",
     "codes": [
-      "Mi"
+      "GA",
+      "SO"
     ],
-    "notes": "Dairy in cream; check toppings."
+    "notes": "Oyster/soy based."
   },
   {
-    "dish": "Black Sesame Ice Cream (example)",
+    "dish": "Stir\u2011Fry Asparagus with Lily Bulbs, Water Chestnut & Yellow Fungus (V)",
+    "codes": [
+      "MR"
+    ],
+    "notes": "Contains fungus; generally gluten\u2011free."
+  },
+  {
+    "dish": "Peach Melba",
     "codes": [
       "Mi",
-      "SE"
+      "EG"
     ],
-    "notes": "Dairy and sesame."
+    "notes": "Dairy and egg in ice cream."
+  },
+  {
+    "dish": "Wasabi Blanch",
+    "codes": [
+      "Mi",
+      "NU",
+      "EG"
+    ],
+    "notes": "Contains almond; egg yolk in ice cream."
+  },
+  {
+    "dish": "Matcha Financier",
+    "codes": [
+      "GL",
+      "EG",
+      "NU",
+      "Mi"
+    ],
+    "notes": "Almond flour; dairy; gluten."
   }
 ]
