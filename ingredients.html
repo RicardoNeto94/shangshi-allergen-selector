@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ingredients — Shang Shi</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="header sticky compact">
+    <div class="inner">
+      <div class="brand">Shang Shi <span class="badge">Ingredients</span></div>
+      <nav class="nav"><a class="btn" href="index.html">Back to Menu</a></nav>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 id="title">Ingredients</h1>
+    <div id="allergens" class="small"></div>
+    <ul id="list"></ul>
+    <hr style="border-color: var(--border); border-width: 0 0 1px; margin: 24px 0;" />
+    <section>
+      <h3>Allergen Key</h3>
+      <div id="legend"></div>
+    </section>
+  </div>
+
+  <div class="footer">
+    <div class="container small">Note: Ingredient list is indicative; suppliers may vary.</div>
+  </div>
+
+  <script>
+  {script_js}
+  async function render() {{
+    const data = await loadJSON('data/dishes.json');
+    const id = param('dish');
+    const legend = document.getElementById('legend');
+    Object.entries(data.allergens).forEach(([code, name]) => {{
+      const chip = document.createElement('span');
+      chip.className = 'chip';
+      chip.textContent = code + ' — ' + name;
+      legend.appendChild(chip);
+    }});
+
+    const listEl = document.getElementById('list');
+    const titleEl = document.getElementById('title');
+    const allergenEl = document.getElementById('allergens');
+
+    if (!id) {{
+      titleEl.textContent = 'All Dishes — Ingredients';
+      data.dishes.forEach(d => {{
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${{d.name}}</strong>: ${{d.ingredients.join(', ')}}`;
+        listEl.appendChild(li);
+      }});
+      return;
+    }}
+
+    const dish = data.dishes.find(x => x.id === id);
+    if (!dish) {{
+      titleEl.textContent = 'Dish not found';
+      return;
+    }}
+
+    titleEl.textContent = dish.name + ' — Ingredients';
+    allergenEl.appendChild(createAllergenChips(dish.allergens, data.allergens));
+    dish.ingredients.forEach(it => {{
+      const li = document.createElement('li');
+      li.textContent = it;
+      listEl.appendChild(li);
+    }});
+  }}
+  render();
+  </script>
+</body>
+</html>

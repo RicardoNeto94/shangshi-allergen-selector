@@ -1,0 +1,967 @@
+{
+  "dishes": [
+    {
+      "id": "caviar_prawn_white",
+      "name": "Caviar Prawn Dumplings (White)",
+      "price": "",
+      "allergens": [
+        "CR",
+        "GL",
+        "SO"
+      ],
+      "short": "Prawn dumpling topped with caviar.",
+      "ingredients": [
+        "Prawn",
+        "Caviar",
+        "Wheat starch dough"
+      ]
+    },
+    {
+      "id": "octopus_pickled_cabbage_blue",
+      "name": "Octopus & Pickled Cabbage Dumpling (Blue)",
+      "price": "",
+      "allergens": [
+        "Fl",
+        "GL",
+        "ON"
+      ],
+      "short": "Octopus with pickled cabbage.",
+      "ingredients": [
+        "Octopus",
+        "Pickled cabbage",
+        "Corn",
+        "Fennel",
+        "Ginger",
+        "Spring onion",
+        "Carrot",
+        "Potato starch",
+        "Wheat starch"
+      ]
+    },
+    {
+      "id": "foie_gras_chicken_orange",
+      "name": "Foie Gras Chicken Dumpling (Orange)",
+      "price": "",
+      "allergens": [
+        "EG",
+        "GL"
+      ],
+      "short": "Chicken & foie gras.",
+      "ingredients": [
+        "Chicken",
+        "Foie gras",
+        "Water chestnut",
+        "Mushroom",
+        "Ginger",
+        "Pumpkin",
+        "Potato starch",
+        "Wheat flour"
+      ]
+    },
+    {
+      "id": "xo_king_crab_red",
+      "name": "XO Sauce King Crab Dumpling (Red)",
+      "price": "",
+      "allergens": [
+        "CR",
+        "SO"
+      ],
+      "short": "King crab with XO sauce.",
+      "ingredients": [
+        "King crab",
+        "XO sauce"
+      ]
+    },
+    {
+      "id": "wagyu_beef_purple",
+      "name": "Wagyu Beef Dumpling (Purple)",
+      "price": "",
+      "allergens": [
+        "GL"
+      ],
+      "short": "Wagyu, carrot & bamboo shoots.",
+      "ingredients": [
+        "Wagyu beef",
+        "Carrot (diced)",
+        "Ginger",
+        "Bamboo shoots",
+        "Coriander",
+        "Potato starch",
+        "Wheat sheet flour"
+      ]
+    },
+    {
+      "id": "tobiko_scallop_shumai_yellow",
+      "name": "Tobiko Scallop Shumai (Yellow)",
+      "price": "",
+      "allergens": [
+        "CR",
+        "MO",
+        "GL"
+      ],
+      "short": "Shrimp & scallop shumai with tobiko.",
+      "ingredients": [
+        "Shrimp",
+        "Bamboo shoot",
+        "Scallop",
+        "Tobiko",
+        "Strong flour",
+        "Potato starch"
+      ]
+    },
+    {
+      "id": "spinach_green",
+      "name": "Spinach Dumpling (Green)",
+      "price": "",
+      "allergens": [
+        "GL"
+      ],
+      "short": "Spinach dumpling.",
+      "ingredients": [
+        "Spinach",
+        "Dumpling wrapper"
+      ]
+    },
+    {
+      "id": "chopped_pepper_lamb_pink",
+      "name": "Chopped Pepper Lamb Dumpling (Pink)",
+      "price": "",
+      "allergens": [
+        "GL"
+      ],
+      "short": "Lamb with chopped pepper.",
+      "ingredients": [
+        "Lamb",
+        "Dumpling wrapper"
+      ]
+    },
+    {
+      "id": "black_truffle_edamame_green",
+      "name": "Black Truffle Edamame Dumplings (Green)",
+      "price": "",
+      "allergens": [
+        "Mi",
+        "GL"
+      ],
+      "short": "Truffle & edamame.",
+      "ingredients": [
+        "Black truffle",
+        "Edamame",
+        "Butter",
+        "Cream",
+        "Bread crumbs",
+        "Potato starch",
+        "Wheat starch"
+      ]
+    },
+    {
+      "id": "spicy_veg_orange",
+      "name": "Spicy Vegetable Dumplings (Orange)",
+      "price": "",
+      "allergens": [
+        "CE",
+        "GL"
+      ],
+      "short": "Radish, carrot, celery, mushrooms.",
+      "ingredients": [
+        "White radish",
+        "Carrot",
+        "Celery",
+        "Enoki mushroom",
+        "Black fungus",
+        "Corn",
+        "Coriander",
+        "Potato starch",
+        "Wheat flour"
+      ]
+    },
+    {
+      "id": "morel_mushroom_black",
+      "name": "Morel Mushroom Dumplings (Black)",
+      "price": "",
+      "allergens": [
+        "MR",
+        "GL"
+      ],
+      "short": "Morel & shiitake.",
+      "ingredients": [
+        "Morel mushroom",
+        "Water chestnut",
+        "Pumpkin",
+        "Zucchini",
+        "Shiitake mushroom",
+        "Potato starch",
+        "Wheat starch"
+      ]
+    },
+    {
+      "id": "king_oyster_white",
+      "name": "King Oyster Mushroom Dumpling (White)",
+      "price": "",
+      "allergens": [
+        "MR",
+        "GL"
+      ],
+      "short": "King oyster & shiitake.",
+      "ingredients": [
+        "King oyster mushroom",
+        "Shiitake mushroom",
+        "Chinese gong vegetable (gong chai)",
+        "Dumpling wrapper"
+      ]
+    },
+    {
+      "id": "vegetable_spring_roll",
+      "name": "Vegetable Spring Roll",
+      "price": "",
+      "allergens": [
+        "MR",
+        "GL"
+      ],
+      "short": "Cabbage, mushrooms & carrot.",
+      "ingredients": [
+        "Cabbage",
+        "Morels mushroom",
+        "Carrot",
+        "Shiitake mushrooms",
+        "Skin: podia wrapper"
+      ]
+    },
+    {
+      "id": "pumpkin_ball_duck",
+      "name": "Pumpkin Ball (with Duck)",
+      "price": "",
+      "allergens": [
+        "GL"
+      ],
+      "short": "Duck, pumpkin & water chestnut.",
+      "ingredients": [
+        "Duck meat",
+        "Pumpkin",
+        "Water chestnut",
+        "Shiitake mushroom",
+        "Bamboo",
+        "Skin: glutinous rice flour, wheat starch, pumpkin mash"
+      ]
+    },
+    {
+      "id": "baked_venison_puff",
+      "name": "Baked Venison Puff",
+      "price": "",
+      "allergens": [
+        "GL",
+        "EG",
+        "SE"
+      ],
+      "short": "Flaky puff with venison & black pepper.",
+      "ingredients": [
+        "Venison meat",
+        "Black pepper",
+        "Onion",
+        "Skin: potato starch, low gluten flour, egg, lard, white sesame"
+      ]
+    },
+    {
+      "id": "aromatic_duck_spring_roll",
+      "name": "Aromatic Duck Spring Roll",
+      "price": "",
+      "allergens": [
+        "GL"
+      ],
+      "short": "Duck with cucumber & spring onion.",
+      "ingredients": [
+        "Cucumber",
+        "Spring onion",
+        "Duck sauce"
+      ]
+    },
+    {
+      "id": "sakura_salad",
+      "name": "Sakura Salad",
+      "price": "",
+      "allergens": [
+        "SE"
+      ],
+      "short": "Lotus, pine nuts, grape & duck.",
+      "ingredients": [
+        "Lotus",
+        "Pine nuts",
+        "Grape",
+        "Duck (braised in wok)",
+        "Duck dressing (plum sauce, duck sauce, rice vinegar, Maggi seasoning, honey)",
+        "Crisp lotus",
+        "Pomegranate",
+        "Fresh onion",
+        "Olive oil",
+        "Pomelo (seasonal)"
+      ]
+    },
+    {
+      "id": "soft_shell_crab",
+      "name": "Soft Shell Crab (Deep-Fried)",
+      "price": "",
+      "allergens": [
+        "MO",
+        "EG",
+        "GL",
+        "GA"
+      ],
+      "short": "With Thai chili & egg floss.",
+      "ingredients": [
+        "Soft shell crab (Germany)",
+        "Potato starch",
+        "Thai red chili",
+        "Curry leaves",
+        "Egg floss (egg, curry powder, butter, oil, seasoning)"
+      ]
+    },
+    {
+      "id": "crispy_squid_prawn_chili",
+      "name": "Crispy Squid with Prawn Filling & Chili",
+      "price": "",
+      "allergens": [
+        "MO",
+        "CR",
+        "GA",
+        "SO",
+        "GL"
+      ],
+      "short": "Crispy garlic, toban chili sauce.",
+      "ingredients": [
+        "Squid",
+        "Prawn filling",
+        "Crispy garlic",
+        "Dried red chili",
+        "Fresh garlic",
+        "Scallion",
+        "Toban chili sauce (sugar, salt, Shaoxing wine)",
+        "Egg white",
+        "Potato starch",
+        "Bamboo leaf"
+      ]
+    },
+    {
+      "id": "crispy_tofu_vermicelli",
+      "name": "Crispy Tofu with Vermicelli",
+      "price": "",
+      "allergens": [
+        "SO",
+        "GL",
+        "EG",
+        "GA"
+      ],
+      "short": "Crispy flour & fried noodles.",
+      "ingredients": [
+        "Tofu (blue box)",
+        "Crispy flour (togarashi, potato starch, wheat flour, rice flour, paprika, curry powder, 13 spice, panko, salt)",
+        "Deep-fried vermicelli"
+      ]
+    },
+    {
+      "id": "truffle_paste_veg",
+      "name": "Truffle Paste Vegetables",
+      "price": "",
+      "allergens": [
+        "MR"
+      ],
+      "short": "Shimeji, carrot, cabbage & truffle paste.",
+      "ingredients": [
+        "Shimeji mushroom",
+        "Carrot",
+        "Cabbage",
+        "Truffle paste"
+      ]
+    },
+    {
+      "id": "peking_duck",
+      "name": "Peking Duck (3 Ways)",
+      "price": "",
+      "allergens": [
+        "GL",
+        "EG",
+        "SO",
+        "SU"
+      ],
+      "short": "Skin with sugar; Pancake with caviar; FOH carving.",
+      "ingredients": [
+        "Duck",
+        "Caviar (Belgian, 30g)",
+        "Pancake",
+        "Momo pancake (Chinese pancake)",
+        "Seasoning: salt, sugar, MSG, five spice, licorice powder, cinnamon powder, chicken powder",
+        "Skin color: white vinegar, water, red vinegar, maltose, soda",
+        "Dough: low-gluten wheat flour, rice flour, baking powder, egg white"
+      ]
+    },
+    {
+      "id": "chicken_sweet_corn_soup",
+      "name": "Chicken & Sweet Corn Soup",
+      "price": "",
+      "allergens": [
+        "EG"
+      ],
+      "short": "Yellow broth with minced corn.",
+      "ingredients": [
+        "Yellow broth (old chicken, duck, chicken feet, ginger, spring onion, white peppercorn, carrot, pumpkin)",
+        "Chicken (chopped)",
+        "Egg white",
+        "Potato starch",
+        "Minced corn"
+      ]
+    },
+    {
+      "id": "duck_cubes_peach_gum_soup",
+      "name": "Duck Cubes & Peach Gum Soup",
+      "price": "",
+      "allergens": [
+        "SO",
+        "SE"
+      ],
+      "short": "Rich broth with mushrooms & seeds.",
+      "ingredients": [
+        "Broth (old chicken, ginger, spring onion, white peppercorn, soya bean)",
+        "Spring onion",
+        "Sesame seeds",
+        "Potato starch",
+        "Water chestnut",
+        "Shiitake mushroom",
+        "Peach gum",
+        "Duck cubes"
+      ]
+    },
+    {
+      "id": "king_crab_methods",
+      "name": "Norwegian King Crab — Chef's Preparations",
+      "price": "",
+      "allergens": [
+        "CR",
+        "EG",
+        "GA"
+      ],
+      "short": "Pan-fried chili/garlic; or steamed with rice wine & egg white; or yellow broth.",
+      "ingredients": [
+        "King crab",
+        "Chili",
+        "Garlic",
+        "Steamed fish sauce",
+        "Chervil",
+        "Spring onion",
+        "Rice wine",
+        "Egg white"
+      ]
+    },
+    {
+      "id": "abalone_superior_oyster",
+      "name": "Braised South African Abalone in Superior Oyster Sauce",
+      "price": "",
+      "allergens": [
+        "MO",
+        "SO"
+      ],
+      "short": "With asparagus & white shiitake.",
+      "ingredients": [
+        "Abalone (canned, SA)",
+        "White shiitake (Japan)",
+        "Asparagus",
+        "Braise: old chicken, Parma ham, chicken feet, maltose, oyster sauce",
+        "Goji berry",
+        "Potato starch"
+      ]
+    },
+    {
+      "id": "fish_maw_truffle",
+      "name": "Braised Fish Maw with Shiitake & Truffle",
+      "price": "",
+      "allergens": [
+        "Fl",
+        "SO"
+      ],
+      "short": "Yellow broth & truffle accents.",
+      "ingredients": [
+        "Fish maw (5–6 head/600g)",
+        "Pak choi",
+        "White shiitake mushroom",
+        "Goji berry",
+        "Sauce (yellow broth, oyster sauce, chicken powder, Chinese cooking wine, sugar, truffle paste, truffle oil, potato starch)"
+      ]
+    },
+    {
+      "id": "lobster_ginger_spring_onion",
+      "name": "Lobster with Ginger & Spring Onion",
+      "price": "",
+      "allergens": [
+        "MO",
+        "SO",
+        "SE"
+      ],
+      "short": "Wok-tossed lobster.",
+      "ingredients": [
+        "Lobster",
+        "Ginger",
+        "Spring onion",
+        "Oyster sauce",
+        "Chicken powder",
+        "Sugar",
+        "Chinese cooking wine",
+        "Potato starch",
+        "Sesame oil",
+        "Chicken stock"
+      ]
+    },
+    {
+      "id": "honey_seabass",
+      "name": "Grilled Chilean Sea Bass in Honey",
+      "price": "",
+      "allergens": [
+        "Fl"
+      ],
+      "short": "Asparagus & shimeji, honey foam.",
+      "ingredients": [
+        "Chilean sea bass",
+        "Asparagus",
+        "Shimeji mushroom",
+        "Honey seabass sauce",
+        "Honey foam"
+      ]
+    },
+    {
+      "id": "deep_fried_scallop_teriyaki",
+      "name": "Deep-Fried King Scallop with Minced Prawns (Teriyaki)",
+      "price": "",
+      "allergens": [
+        "MO",
+        "CR",
+        "SO"
+      ],
+      "short": "Leek & Korean BBQ dressing.",
+      "ingredients": [
+        "Scallop cake (prawn filling & scallops)",
+        "Asparagus",
+        "Deep-fried leek",
+        "Korean BBQ scallop dressing (Toban chili sauce, teriyaki w/ roast garlic, Worcestershire, garlic, veg oyster sauce, water, MSG, chicken powder, sugar, salt, oil, potato starch)"
+      ]
+    },
+    {
+      "id": "kung_pao_prawn",
+      "name": "Kung Pao Prawn with Cashew",
+      "price": "",
+      "allergens": [
+        "CR",
+        "NU",
+        "SO"
+      ],
+      "short": "Cashew, peppers & tangy heat.",
+      "ingredients": [
+        "Prawn",
+        "Cashew nuts",
+        "Red & yellow bell peppers",
+        "Scallion",
+        "Onion",
+        "Parsley",
+        "Sauce (sweet & sour, black vinegar, sugar, oyster sauce, black soy, Tabasco, toban chili, mala hotpot)",
+        "Potato starch"
+      ]
+    },
+    {
+      "id": "wagyu_truffle",
+      "name": "Slow-Cooked Japanese A4 Wagyu with Black Truffle Sauce",
+      "price": "",
+      "allergens": [
+        "MR",
+        "GL",
+        "GA"
+      ],
+      "short": "Black truffle, noodle boat & enoki.",
+      "ingredients": [
+        "Black truffle sauce (shared)",
+        "A4 Wagyu",
+        "Stir-fried red onion & shiitake",
+        "Deep-fried garlic",
+        "Chinese noodle boat with seaweed",
+        "Deep-fried enoki with crispy flour",
+        "Truffle slices",
+        "Chervil"
+      ]
+    },
+    {
+      "id": "angus_black_pepper_beef",
+      "name": "Stir-Fry Angus Tenderloin Beef with Black Pepper Sauce",
+      "price": "",
+      "allergens": [
+        "GA",
+        "SO"
+      ],
+      "short": "With fried garlic & frisée.",
+      "ingredients": [
+        "Beef entrecote",
+        "Fried garlic",
+        "Paprika",
+        "Onion",
+        "Black pepper sauce (crushed black pepper, butter, tomato sauce, Maggi seasoning, Worcestershire, sugar, MSG)",
+        "Vermicelli garnish",
+        "Yellow frisée"
+      ]
+    },
+    {
+      "id": "rack_of_lamb_mongolia",
+      "name": "Rack of Lamb with Chef's Mongolia Sauce",
+      "price": "",
+      "allergens": [
+        "Mi"
+      ],
+      "short": "Pan-fried lamb, deep-fried leek.",
+      "ingredients": [
+        "Lamb (3pcs)",
+        "Stir-fried onion",
+        "Deep-fried leek",
+        "Mongolia sauce (butter, evaporated milk, crushed black pepper, turmeric powder, Maggi chili sauce, salt, sugar)"
+      ]
+    },
+    {
+      "id": "iberico_pork_sweet_sour",
+      "name": "Sweet & Sour Iberico Pork",
+      "price": "",
+      "allergens": [
+        "SO"
+      ],
+      "short": "Crispy Iberico pork neck.",
+      "ingredients": [
+        "Iberico pork neck (sliced, marinated, egg + potato starch, deep-fried)",
+        "Paprika (red & yellow)",
+        "Onion",
+        "Longan",
+        "Sweet & sour sauce (rice vinegar, yellow sugar, salted water plum, tomato sauce, OK sauce, water, Worcestershire, red long chili, lemon, hawthorn)"
+      ]
+    },
+    {
+      "id": "three_cups_chicken",
+      "name": "Sizzling Taiwanese Three Cups Chicken",
+      "price": "",
+      "allergens": [
+        "SO",
+        "SE"
+      ],
+      "short": "Soy, rice wine & sesame oil trio.",
+      "ingredients": [
+        "Chicken",
+        "Sauce (soy paste & soy sauce, black vinegar, toban chili sauce, yellow bean sauce, sugar)",
+        "Yellow & red paprika",
+        "Red onion",
+        "Spring onion",
+        "Ginger",
+        "Fried garlic",
+        "Basil",
+        "Sesame oil",
+        "Chinese cooking wine",
+        "Dark soy sauce",
+        "Potato starch"
+      ]
+    },
+    {
+      "id": "salt_pepper_quail",
+      "name": "Salt & Pepper Estonian Quail",
+      "price": "",
+      "allergens": [
+        "EG",
+        "GA",
+        "SO"
+      ],
+      "short": "Deep-fried with chili & garlic.",
+      "ingredients": [
+        "Quail (2, cut to 4)",
+        "Egg white",
+        "Potato starch",
+        "Toban chili sauce",
+        "Salt",
+        "Sugar",
+        "Chicken powder",
+        "Chinese cooking wine",
+        "Fried garlic",
+        "Scallion",
+        "Dry red chili",
+        "Bamboo leaf",
+        "Parsley"
+      ]
+    },
+    {
+      "id": "braised_pork_belly",
+      "name": "Braised Pork Belly",
+      "price": "",
+      "allergens": [
+        "SO",
+        "GA",
+        "SU"
+      ],
+      "short": "Six pieces, rich mala glaze.",
+      "ingredients": [
+        "Pork belly (6 pcs)",
+        "Pak choi mini",
+        "Braising sauce (chicken powder, veg oyster sauce, sesame oil, soy sauce, five spice, sugar, mala sauce, black pepper sauce, rice wine, garlic powder, salt, mirin, black vinegar)"
+      ]
+    },
+    {
+      "id": "steamed_pumpkin_tofu",
+      "name": "Steamed Pumpkin Tofu",
+      "price": "",
+      "allergens": [
+        "SO",
+        "EG"
+      ],
+      "short": "Tofu (soya), egg & pumpkin.",
+      "ingredients": [
+        "Tofu (soya bean)",
+        "Egg",
+        "Pumpkin",
+        "Black fungus",
+        "Shiitake mushroom",
+        "Carrot",
+        "Sugar peas",
+        "Oyster sauce",
+        "Salt",
+        "Chicken powder",
+        "Dark soy sauce"
+      ]
+    },
+    {
+      "id": "mapo_tofu_beef",
+      "name": "Mapo Tofu (with Minced Beef)",
+      "price": "",
+      "allergens": [
+        "SO",
+        "MU"
+      ],
+      "short": "Blue box tofu & preserved veg.",
+      "ingredients": [
+        "Tofu (blue box)",
+        "Minced beef",
+        "Preserved Sichuan vegetable",
+        "Bamboo cubes",
+        "Water chestnut cubes",
+        "Chili",
+        "Shallot",
+        "Mustard",
+        "Cabbage",
+        "Shiitake mushrooms"
+      ]
+    },
+    {
+      "id": "stir_fry_mixed_veg",
+      "name": "Stir-Fried Mixed Vegetables",
+      "price": "",
+      "allergens": [
+        "GA"
+      ],
+      "short": "Chestnut, lotus & fungi.",
+      "ingredients": [
+        "Water chestnut",
+        "Asparagus",
+        "Lotus root",
+        "Shimeji mushroom (B/W)",
+        "Oyster mushroom",
+        "Carrot",
+        "Yellow fungus",
+        "Garlic",
+        "Black pepper",
+        "Salt, sugar, chicken powder",
+        "Chinese cooking wine",
+        "Potato starch"
+      ]
+    },
+    {
+      "id": "pak_choi_garlic",
+      "name": "Pak Choi with Garlic",
+      "price": "",
+      "allergens": [
+        "GA"
+      ],
+      "short": "Classic wok-tossed greens.",
+      "ingredients": [
+        "Pak choi",
+        "Garlic",
+        "Salt, sugar, chicken powder",
+        "Potato starch"
+      ]
+    },
+    {
+      "id": "pak_choi_oyster_sauce",
+      "name": "Pak Choi with Oyster Sauce",
+      "price": "",
+      "allergens": [
+        "SO"
+      ],
+      "short": "With rich oyster glaze.",
+      "ingredients": [
+        "Pak choi",
+        "Oyster sauce",
+        "Chicken powder",
+        "Sugar",
+        "Dark soy sauce",
+        "Potato starch",
+        "Chicken stock"
+      ]
+    },
+    {
+      "id": "lamian_beef",
+      "name": "Lamian with Angus Beef",
+      "price": "",
+      "allergens": [
+        "GL",
+        "SO",
+        "EG",
+        "SE"
+      ],
+      "short": "Shimeji, onions & chili.",
+      "ingredients": [
+        "Lamian",
+        "Angus beef",
+        "Shimeji mushroom",
+        "Spring onion",
+        "Red onion",
+        "Chili",
+        "Mung bean sprout",
+        "Oyster sauce",
+        "Sugar",
+        "Chicken powder",
+        "Yellow bean sauce",
+        "Toban chili sauce",
+        "White pepper",
+        "Sesame oil",
+        "Dark soy sauce",
+        "Egg"
+      ]
+    },
+    {
+      "id": "singapore_noodles_seafood",
+      "name": "Singapore Noodles (Seafood)",
+      "price": "",
+      "allergens": [
+        "GL",
+        "SO",
+        "EG",
+        "SE"
+      ],
+      "short": "Curry aroma & seafood.",
+      "ingredients": [
+        "Vermicelli",
+        "Seafood (assorted)",
+        "Singapore noodle sauce (veg oyster sauce, sugar, soy sauce, water, chicken powder, curry powder)",
+        "Mung bean sprout",
+        "Egg",
+        "Chili",
+        "Coriander",
+        "Sesame seeds"
+      ]
+    },
+    {
+      "id": "xo_fried_rice_roast_pork",
+      "name": "XO Sauce Fried Rice with Roast Pork",
+      "price": "",
+      "allergens": [
+        "SO",
+        "EG",
+        "CR",
+        "Fl"
+      ],
+      "short": "Jasmine rice, pumpkin & scallion.",
+      "ingredients": [
+        "XO sauce",
+        "Jasmine rice",
+        "Egg",
+        "Roast pork",
+        "Pumpkin",
+        "Scallions",
+        "Seasoning (chicken powder, salt, white pepper, dark soy sauce, sesame oil)"
+      ]
+    },
+    {
+      "id": "golden_egg_fried_rice",
+      "name": "Golden Egg Fried Rice",
+      "price": "",
+      "allergens": [
+        "EG"
+      ],
+      "short": "Simple & satisfying.",
+      "ingredients": [
+        "Jasmine rice",
+        "Egg",
+        "Seasoning (chicken powder, salt)"
+      ]
+    },
+    {
+      "id": "steamed_jasmine_rice",
+      "name": "Steamed Jasmine Rice (with Asparagus, Corn & Shallot)",
+      "price": "",
+      "allergens": [],
+      "short": "Lightly seasoned steamed rice.",
+      "ingredients": [
+        "Jasmine rice",
+        "Asparagus",
+        "Corn",
+        "Shallot",
+        "Chili"
+      ]
+    },
+    {
+      "id": "black_truffle_duck_sauce",
+      "name": "Black Truffle Sauce (House)",
+      "price": "",
+      "allergens": [
+        "SO",
+        "Mi",
+        "GA",
+        "ON"
+      ],
+      "short": "Used across duck & wagyu items.",
+      "ingredients": [
+        "Scallion",
+        "Shallots",
+        "Garlic",
+        "Ginger",
+        "Preserved vegetables",
+        "Water chestnuts",
+        "Truffle oil",
+        "Oyster sauce",
+        "Red chili preserved",
+        "Honey",
+        "Truffle paste",
+        "Light soy sauce",
+        "Pietro dressing original",
+        "Mirin",
+        "Mizkan rice vinegar",
+        "Deep-fried leek"
+      ]
+    },
+    {
+      "id": "mustard_sauce",
+      "name": "Mustard Sauce (House)",
+      "price": "",
+      "allergens": [
+        "MU"
+      ],
+      "short": "House mustard sauce.",
+      "ingredients": [
+        "Mustard sauce (house recipe)"
+      ]
+    }
+  ],
+  "allergens": {
+    "CE": "Celery",
+    "GL": "Cereals w/ gluten",
+    "CR": "Crustaceans",
+    "EG": "Eggs",
+    "Fl": "Fish",
+    "LU": "Lupin",
+    "MO": "Molluscs",
+    "Mi": "Milk",
+    "MU": "Mustard",
+    "NU": "Nuts",
+    "PE": "Peanuts",
+    "SE": "Sesame",
+    "SO": "Soya",
+    "SU": "Sulfites",
+    "GA": "Garlic",
+    "ON": "Onion",
+    "MR": "Mushrooms",
+    "Cl": "Awaiting completion"
+  }
+}

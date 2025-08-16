@@ -1,97 +1,79 @@
+
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shang Shi — Allergen & Dish Guide</title>
-  <meta name="description" content="Filter dishes by allergens in seconds — built for FOH.">
-  <link rel="icon" href="assets/logo.png" type="image/png">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shang Shi — Menu (Cards)</title>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="nav-inner shell">
-      <a href="#" class="nav-brand">
-        <img src="assets/logo.png" alt="Shang Shi" class="nav-logo" />
-        <span class="brand-text">Shang Shi</span>
-      </a>
-      <nav class="nav-links">
-        <a href="#selector">Selector</a>
-        <a href="#how">How it works</a>
-        <a href="#faq">FAQ</a>
-      </nav>
+  <div class="header sticky compact">
+    <div class="inner">
+      <div class="brand">Shang Shi <span class="badge">Card Layout</span></div>
+      <nav class="nav"><a class="btn" href="ingredients.html">All Ingredients</a></nav>
     </div>
-  </header>
+  </div>
 
-  <section class="hero">
-    <div class="shell hero-grid">
-      <div class="hero-copy">
-        <h1>Effortless allergen checks for flawless service</h1>
-        <p>Tick allergens, see safe dishes instantly. Designed for iPad and quick guest interactions.</p>
-        <div class="hero-ctas">
-          <a class="btn primary" href="#selector">Open selector</a>
-          <a class="btn ghost" href="#how">Learn more</a>
+  <div class="container">
+    <h1>Menu</h1>
+    <p class="small">Swipeable, scannable cards. Tap “Learn More” for full ingredients and allergens.</p>
+
+    <div id="cards" class="grid"></div>
+  </div>
+
+  <div class="footer">
+    <div class="container small">© Shang Shi • Elevated & modern</div>
+  </div>
+
+  <script src="assets/script.js"></script>
+  <script>
+  
+async function loadJSON(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error("Failed to load " + path);
+  return res.json();
+}
+
+function param(name) {
+  const params = new URLSearchParams(window.location.search);
+  return params.get(name);
+}
+
+function createAllergenChips(codes, map) {
+  const wrap = document.createElement('div');
+  wrap.className = 'allergen-wrap';
+  codes.forEach(c => {
+    const chip = document.createElement('span');
+    chip.className = 'chip';
+    chip.textContent = c;
+    chip.title = map[c] || c;
+    wrap.appendChild(chip);
+  });
+  return wrap;
+}
+
+  async function renderCards() {
+    const data = await loadJSON('data/dishes.json');
+    const root = document.getElementById('cards');
+    data.dishes.forEach(d => {
+      const card = document.createElement('article');
+      card.className = 'card';
+      card.innerHTML = `
+        <div class="card-body">
+          <h3 class="dish-name">{}</h3>
+          <p class="desc">{}</p>
+          <div class="meta">
+            <span class="price">{}</span>
+            <a class="btn" href="ingredients.html?dish=${d.id}">Learn More</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-visual">
-        <div class="orb"></div>
-        <img src="assets/logo.png" alt="" class="logo.png">
-      </div>
-    </div>
-  </section>
-
-  <main>
-    <section id="selector" class="section">
-      <div class="shell">
-        <div class="selector-grid">
-          <aside class="panel sticky">
-            <h3>Allergens</h3>
-            <div id="allergenList" class="chips"></div>
-            <div class="modes">
-              <label class="mode"><input type="radio" name="mode" value="safe" checked><span>SAFE (exclude selected)</span></label>
-              <label class="mode"><input type="radio" name="mode" value="contains"><span>CONTAINS (show selected)</span></label>
-            </div>
-            <p class="note">⚠️ Chef must verify codes before FOH use.</p>
-          </aside>
-
-          <section class="panel">
-            <div class="toolbar">
-              <input id="search" class="search" placeholder="Search dishes…">
-              <button id="clearBtn" class="btn ghost small">Clear</button>
-            </div>
-            <div id="activeFilters" class="active-filters"></div>
-            <div id="results" class="cards"></div>
-            <div id="empty" class="empty">No dishes match your filters.</div>
-          </section>
-        </div>
-      </div>
-    </section>
-
-    <section id="how" class="section alt">
-      <div class="shell">
-        <h2>How it works</h2>
-        <div class="features">
-          <div class="feat"><div class="feat-icon">✓</div><h4>Instant filtering</h4><p>We hide dishes that contain any selected allergens.</p></div>
-          <div class="feat"><div class="feat-icon">📱</div><h4>iPad-ready</h4><p>Large touch targets, fluid layout, sticky filters.</p></div>
-          <div class="feat"><div class="feat-icon">⚡</div><h4>Live edits</h4><p>Update <code>menu.json</code> online and refresh.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="section">
-      <div class="shell">
-        <h2>FAQ</h2>
-        <details><summary>Update dishes?</summary><p>Edit <code>menu.json</code>; each dish has a <code>codes</code> array like <code>["GL","SO"]</code>.</p></details>
-        <details><summary>Show dishes that contain an allergen?</summary><p>Switch mode to <strong>CONTAINS</strong>.</p></details>
-        <details><summary>Add new allergens?</summary><p>Add to <code>allergens.json</code> with a code + name.</p></details>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="shell"><span>© Shang Shi</span><span class="dot"></span><span>FOH Allergen & Dish Guide</span></div>
-  </footer>
-
-  <script src="app.js"></script>
+      `.replace('{}', d.name).replace('{}', d.short).replace('{}', d.price);
+      card.appendChild(createAllergenChips(d.allergens, data.allergens));
+      root.appendChild(card);
+    });
+  }
+  renderCards();
+  </script>
 </body>
 </html>
